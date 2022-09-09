@@ -1,0 +1,70 @@
+﻿<Window x:Class="SCDProject_AdminPanel.AddClassroomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SCDProject_AdminPanel"
+        mc:Ignorable="d"
+        Title="Add Classroom" Height="450" Width="455">
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+
+        </Grid.RowDefinitions>
+
+        <Label Content="ID" VerticalAlignment="Center" Margin="50,0,0,0"/>
+        <Label Content="Classroom Code" Grid.Row="1" VerticalAlignment="Center" Margin="50,0,0,0"/>
+        <Label Content="Instructor Name" Grid.Row="2" VerticalAlignment="Center" Margin="50,0,0,0"/>
+        <Label Content="Course" Grid.Row="3" VerticalAlignment="Center" Margin="50,0,0,0"/>
+        <Label Content="Day for 1st Class" Grid.Row="4" VerticalAlignment="Center" Margin="50,0,0,0" />
+        <Label Content="Day for 2nd Class" Grid.Row="5" VerticalAlignment="Center" Margin="50,0,0,0" />
+        
+        <TextBox x:Name="IdTextbox" Text="AUTO_GENERATED" IsReadOnly="True" VerticalAlignment="Center" Grid.Column="1" Margin="20,0,20,0"/>
+        <TextBox x:Name="classroomCodeTextbox" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Margin="20,0,20,0"/>
+        <TextBox x:Name="instructorTextbox" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="20,0,20,0"/>
+        
+        <ComboBox x:Name="courseCombobox" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="3" Width="150" Height="20" Margin="20,0,0,0"
+                  
+                  >
+            
+        </ComboBox>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1">
+            <ComboBox Width="75" Margin="30,0" Height="25" x:Name="dayCombobox1" SelectedIndex="0">
+                <!--<ComboBoxItem>Monday</ComboBoxItem>
+                <ComboBoxItem>Tuesday</ComboBoxItem>
+                <ComboBoxItem>Wednesday</ComboBoxItem>
+                <ComboBoxItem>Thursday</ComboBoxItem>
+                <ComboBoxItem>Friday</ComboBoxItem>-->
+            </ComboBox>
+            <TextBox x:Name="time1Tf" Width="80" Height="30"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="1">
+            <ComboBox Width="75" Margin="30,0" Height="25" x:Name="dayCombobox2" SelectedIndex="0">
+                <!--<ComboBoxItem>Monday</ComboBoxItem>
+                <ComboBoxItem>Tuesday</ComboBoxItem>
+                <ComboBoxItem>Wednesday</ComboBoxItem>
+                <ComboBoxItem>Thursday</ComboBoxItem>
+                <ComboBoxItem>Friday</ComboBoxItem>-->
+            </ComboBox>
+            <TextBox x:Name="time2Tf" Width="80" Height="30"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="6" >
+            <Button Content="Save" Click="SaveButton_Click" Width="90" Height="25" Margin="25,0"/>
+            <Button Content="Cancel" Width="90" Height="25" Margin="25,0" />
+        </StackPanel>
+    </Grid>
+</Window>

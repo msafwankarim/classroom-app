@@ -1,0 +1,54 @@
+﻿<Window x:Class="SCDProject_AdminPanel.AddStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SCDProject_AdminPanel"
+        mc:Ignorable="d"
+        Title="AddStudentWindow" Height="450" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Label Content="ID" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+
+        <Label Content="Name" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Label Content="Address" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Label Content="Email" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Label Content="Username" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Label Content="Password" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Label Content="Current Semester" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+        <Label Content="Credit hours passed" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+
+
+        <TextBox x:Name="idTextbox" IsEnabled="False" Width="150" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+        <TextBox x:Name="nameTextbox" Width="150" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+        <TextBox x:Name="addressTextbox" Width="150" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+        <TextBox x:Name="emailTextbox" Width="150" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+        <TextBox x:Name="usernameTextbox" Width="150" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+        <TextBox x:Name="passwordTextbox" Width="150" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+
+        <TextBox x:Name="currentSemesterTextbox" Width="150" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+        <TextBox x:Name="creditHoursTextbox" Width="150" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Grid.Row="8" Grid.Column="1">
+            <Button Click="SaveButtonClicked" Content="Save" Width="80" Margin="0,0,28,12"/>
+            <Button Content="Cancel" Width="80" Margin="20,0,0,12" />
+
+        </StackPanel>
+    </Grid>
+</Window>

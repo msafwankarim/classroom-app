@@ -1,0 +1,36 @@
+﻿<Window x:Class="SCDProject_AdminPanel.AddCourseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SCDProject_AdminPanel"
+        mc:Ignorable="d"
+        Title="AddCourseWindow" Height="450" Width="454">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+        
+        <Label Content="Course Code" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="50,0,0,0"/>
+        <Label Content="Course Name" Grid.Row="1" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="50,0,0,0"/>
+        <Label Content="Credit Hours" Grid.Row="2" VerticalAlignment="Center" HorizontalContentAlignment="Center" Margin="50,0,0,0"/>
+
+        <TextBox x:Name="courseCodeTextbox" VerticalAlignment="Center" Grid.Column="1" Margin="20,0,20,0"/>
+        <TextBox x:Name="courseNameTextbox" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Margin="20,0,20,0"/>
+        <TextBox x:Name="creditHoursTextbox" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="20,0,20,0"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3" >
+            <Button Content="Save" Click="SaveButton_Click" Width="90" Height="25" Margin="25"/>
+            <Button Content="Cancel" Width="90" Height="25" Margin="25" />
+        </StackPanel>
+    </Grid>
+</Window>
