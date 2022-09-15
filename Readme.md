@@ -17,5 +17,5 @@ The System was testing under the wifi hotspot due to limitations of resources. T
 behave differently when used under different networks and IPs. It is recommended to change the IPs in configuration files and rebuild the project for correct results.
 
 
-### <p style="text-align: center;">Developed By:</p>
-Muhammad Safwan Karim
+### <p style="text-align: center;">Developed By</p>
+[Muhammad Safwan Karim](https://github.com/msafwankarim)
