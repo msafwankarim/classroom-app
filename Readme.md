@@ -13,7 +13,7 @@ URSBackend contains ASP.NET Core API which provides the access to database to bo
 
 
 ### Note
-The System was testing under the wifi hotspot due to limitations of resources. The server ip was set to https://192.168.43.164:5001 . The system may 
+The System was tested under the wifi hotspot. The server ip was set to https://192.168.43.164:5001 . The system may 
 behave differently when used under different networks and IPs. It is recommended to change the IPs in configuration files and rebuild the project for correct results.
 
 
